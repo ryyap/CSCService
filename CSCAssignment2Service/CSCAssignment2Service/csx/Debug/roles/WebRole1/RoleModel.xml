@@ -24,14 +24,14 @@
     <Property name="SetConfiguration" value="Configuration=Debug" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.0" />
-    <Property name="OutputDir" value="C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\obj\Debug\WebRole1\" />
+    <Property name="OutputDir" value="C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\obj\Debug\WebRole1\" />
     <Property name="EntryPoint" value="WebRole1.dll" />
-    <Property name="SourceDir" value="C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\" />
-    <Property name="SitePhysicalPath" value="C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\" />
+    <Property name="SourceDir" value="C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\" />
+    <Property name="SitePhysicalPath" value="C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\">
+    <Site name="Web" physicalDirectory="C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>

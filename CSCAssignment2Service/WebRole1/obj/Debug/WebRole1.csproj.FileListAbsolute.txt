@@ -162,3 +162,5 @@ C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\zh-Hant\Sys
 C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.dll
 C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.pdb
 C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
+C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\MonAgentListener.dll
