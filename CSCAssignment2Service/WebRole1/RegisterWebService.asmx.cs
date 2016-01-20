@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Services;
 
@@ -16,11 +19,75 @@ namespace WebRole1
     // [System.Web.Script.Services.ScriptService]
     public class RegisterWebService : System.Web.Services.WebService
     {
+      SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;");
+         SqlDataAdapter userDA;
+         SqlCommandBuilder userCB;
 
+         SqlCommand cmd = new SqlCommand();
         [WebMethod]
-        public string HelloWorld()
+        public bool RegisterUser(string username,string password,string dateofbirth,string email)
         {
-            return "Hello World";
+            string sqlText = " INSERT INTO [CSC_Assignment].[dbo].[User] (Username,Password,DateOfBirth,Email) VALUES (@UserName,@Password,@DateOfBirth,@Email);";
+      cmd.CommandText = sqlText;
+      cmd.Connection = myConn;
+            cmd.Parameters.Add("@UserName", SqlDbType.VarChar, 10);
+            cmd.Parameters["@UserName"].Value = username;
+            cmd.Parameters.Add("@Password", SqlDbType.VarChar, 10);
+            cmd.Parameters["@Password"].Value = password;
+            cmd.Parameters.Add("@DateOfBirth", SqlDbType.VarChar, 10);
+            cmd.Parameters["@DateOfBirth"].Value = dateofbirth;
+            cmd.Parameters.Add("@Email", SqlDbType.VarChar, 30);
+            cmd.Parameters["@Email"].Value = email;
+            myConn.Open();
+            cmd.ExecuteNonQuery();
+            myConn.Close();
+            return true;
+          
         }
+        [WebMethod()]
+        public bool UserLogin(string email, string password)
+        {
+            //simulating network delay
+            Thread.Sleep(2000);
+            
+ 
+            try
+            {
+              
+                cmd = new SqlCommand(
+                    "SELECT * from [CSC_Assignment].[dbo].[User] where email=@email " + "and password= @password");
+ 
+    
+                SqlParameter param1 = new SqlParameter();
+                param1.SqlDbType = SqlDbType.NVarChar;
+                param1.ParameterName = "@email";
+                param1.Value = email;
+ 
+                SqlParameter param2 = new SqlParameter();
+                param2.SqlDbType = SqlDbType.NVarChar;
+                param2.ParameterName = "@password";
+                param2.Value = password;
+ 
+               
+                cmd.Parameters.Add(param1); 
+                cmd.Parameters.Add(param2);
+ 
+ 
+                myConn.Open();
+                cmd.Connection = myConn;
+              cmd.ExecuteScalar();
+       
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception(ex.Message);
+                
+            }
+ 
+            myConn.Close();
+            return true;
+        }
+
     }
 }

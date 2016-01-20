@@ -22,7 +22,7 @@ namespace WebRole1
         //SqlCommand custCMD = new SqlCommand();
         SqlCommand cmd;
 
-        protected SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True");
+        protected SqlConnection myConn = new SqlConnection("Data Source=\\DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True");
 
         protected SqlDataAdapter da;
 
@@ -78,19 +78,19 @@ namespace WebRole1
 
         }
         [WebMethod()]
-        public int addImage(String inUploadedBy, byte[] inImageData)
+        public int addImage(string inUploadedBy, byte[] inImageData)
         {
             int numOfRecordsAffected = 0;
 
             
 
             //Prepare a INSERT SQL template
-            string sqlText = "INSERT INTO Image(UploadedBy,inImageData)";
-            sqlText += " VALUES (@inUploadedBy,@inImageData)";
+            string sqlText = "INSERT INTO Image(inUploadedBy,inImageData)";
+            sqlText += " VALUES (@inUploadedBy,@inImageData);";
             //setup the SQL in the cmd object
             cmd.CommandText = sqlText;
-            cmd.Parameters.Add("@inFullName", SqlDbType.VarChar, 100);
-            cmd.Parameters["@inFullName"].Value = inUploadedBy;
+            cmd.Parameters.Add("@inUploadedBy", SqlDbType.VarChar, 100);
+            cmd.Parameters["@inUploadedBy"].Value = inUploadedBy;
             cmd.Parameters.Add("@inImageData", SqlDbType.Image);
             cmd.Parameters["@inImageData"].Value = inImageData;
             myConn.Open();
