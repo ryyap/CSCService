@@ -1,6 +1,6 @@
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
-DiagnosticsPlugin.exe Error: 0 : [20/1/2016 Wednesday 4:06:33 PM] Failed to save IIS Directory state
-DiagnosticsPlugin.exe Error: 0 : [20/1/2016 Wednesday 4:06:33 PM] System.UnauthorizedAccessException: Filename: redirection.config
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
+DiagnosticsPlugin.exe Error: 0 : [22/1/2016 Friday 6:11:44 AM] Failed to save IIS Directory state
+DiagnosticsPlugin.exe Error: 0 : [22/1/2016 Friday 6:11:44 AM] System.UnauthorizedAccessException: Filename: redirection.config
 Error: Cannot read configuration file due to insufficient permissions
 
 
@@ -11,18 +11,18 @@ Error: Cannot read configuration file due to insufficient permissions
    at Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
    at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
    at Microsoft.Azure.Plugins.Plugin.DiagnosticsPluginManager.SaveIISDirectoryState()
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Starting DiagnosticsPlugin
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] DiagnosticsStoreRootPath set to: C:\Users\R Y Yap\AppData\Local\dftmp\Resources\bf2adde0-8d12-40ca-8b92-8fad0c8a3150
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Loading config file: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Config file to read: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Checking VM Type
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Extension set to Emulator Mode
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Reading XML configuration file
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Bypassing private config decryption
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] DiagnosticsStoreRootPath set to: C:\Users\R Y Yap\AppData\Local\dftmp\Resources\2d5326c4-626d-48b1-80cd-f16a80b6b7a4
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Loading config file: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Config file to read: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
   <WadCfg>
     <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
       <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
@@ -54,12 +54,12 @@ DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] <PublicC
   </WadCfg>
   <StorageAccount>devstoreaccount1</StorageAccount>
 </PublicConfig>
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Private setting is loaded
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Is config json/xml loaded
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Successfully created checkpoint file C:\Users\R Y Yap\AppData\Local\dftmp\Resources\bf2adde0-8d12-40ca-8b92-8fad0c8a3150\WAD0105\Configuration\Checkpoint.txt
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Will use local resource directory C:\Users\R Y Yap\AppData\Local\dftmp\Resources\bf2adde0-8d12-40ca-8b92-8fad0c8a3150\WAD0105
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Will use endpoint https://core.windows.net for storage.
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:34 PM] Exception in creating the ServerManager; is IIS installed?
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:44 AM] Is config json/xml loaded
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:45 AM] Successfully created checkpoint file C:\Users\R Y Yap\AppData\Local\dftmp\Resources\2d5326c4-626d-48b1-80cd-f16a80b6b7a4\WAD0105\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:45 AM] Will use local resource directory C:\Users\R Y Yap\AppData\Local\dftmp\Resources\2d5326c4-626d-48b1-80cd-f16a80b6b7a4\WAD0105
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:45 AM] Will use endpoint https://core.windows.net for storage.
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:46 AM] Exception in creating the ServerManager; is IIS installed?
  Error:System.UnauthorizedAccessException: Filename: redirection.config
 Error: Cannot read configuration file due to insufficient permissions
 
@@ -71,9 +71,9 @@ Error: Cannot read configuration file due to insufficient permissions
    at Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
    at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
    at Microsoft.Azure.Plugins.Plugin.WadConfigProcessor.AddDirectories(EventsType mdsEvents, Directories wadDirectories)
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:34 PM] Running in emulator mode, crash dumps not enabled
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:34 PM] Checking to see if Application Insights extension needs to be configured.
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:06:34 PM] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\R Y Yap\AppData\Local\dftmp\Resources\bf2adde0-8d12-40ca-8b92-8fad0c8a3150\WAD0105"  -ConfigFile "C:\Users\R Y Yap\AppData\Local\dftmp\Resources\bf2adde0-8d12-40ca-8b92-8fad0c8a3150\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-20ebedc284a5467d9d5ffdb6fade24c0  -TotalShutDownEvent WADDM-TotalShutDown-20ebedc284a5467d9d5ffdb6fade24c0 -InitializedEvent WADM-StartUp-20ebedc284a5467d9d5ffdb6fade24c0 -parent 10576 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:07:34 PM] MonAgentHost.exe started
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:07:34 PM] DiagnoticsPlugin started.
-DiagnosticsPlugin.exe Information: 0 : [20/1/2016 Wednesday 4:07:34 PM] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:46 AM] Running in emulator mode, crash dumps not enabled
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:46 AM] Checking to see if Application Insights extension needs to be configured.
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:11:47 AM] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\R Y Yap\AppData\Local\dftmp\Resources\2d5326c4-626d-48b1-80cd-f16a80b6b7a4\WAD0105"  -ConfigFile "C:\Users\R Y Yap\AppData\Local\dftmp\Resources\2d5326c4-626d-48b1-80cd-f16a80b6b7a4\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-c064cd0b4e0e4ddfb359c0b82b94508f  -TotalShutDownEvent WADDM-TotalShutDown-c064cd0b4e0e4ddfb359c0b82b94508f -InitializedEvent WADM-StartUp-c064cd0b4e0e4ddfb359c0b82b94508f -parent 11944 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:12:47 AM] MonAgentHost.exe started
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:12:47 AM] DiagnoticsPlugin started.
+DiagnosticsPlugin.exe Information: 0 : [22/1/2016 Friday 6:12:47 AM] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".

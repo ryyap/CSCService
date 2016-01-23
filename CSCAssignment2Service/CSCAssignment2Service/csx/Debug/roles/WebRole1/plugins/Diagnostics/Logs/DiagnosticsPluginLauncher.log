@@ -1,17 +1,17 @@
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] DiagnosticsStoreRootPath set to: C:\Users\R Y Yap\AppData\Local\dftmp\Resources\bf2adde0-8d12-40ca-8b92-8fad0c8a3150
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Loading config file: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Config file to read: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Checking VM Type
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Extension set to Emulator Mode
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Reading XML configuration file
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Bypassing private config decryption
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Stopping the running plugin, if any
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] No DiagnosticsPlugin is running.
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:32 PM] Killing any DiagnosticsPlugin that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Killing any MonAgentHost that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Diagnostics plugin stopped successfully
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:06:33 PM] Resetting DiagnosticPlugin
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:07:43 PM] DiagnosticsPlugin launched successfully with new configuration
-DiagnosticsPluginLauncher.exe Information: 0 : [20/1/2016 Wednesday 4:07:43 PM] DiagnosticPlugin exited with code 0
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] DiagnosticsStoreRootPath set to: C:\Users\R Y Yap\AppData\Local\dftmp\Resources\2d5326c4-626d-48b1-80cd-f16a80b6b7a4
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Loading config file: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Config file to read: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:42 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:43 AM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:43 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:43 AM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:43 AM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:11:43 AM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:12:54 AM] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [22/1/2016 Friday 6:12:54 AM] DiagnosticPlugin exited with code 0
