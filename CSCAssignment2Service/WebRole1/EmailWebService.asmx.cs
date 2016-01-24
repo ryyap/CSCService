@@ -40,6 +40,8 @@ namespace WebRole1
 
         }
 
+       
+
         [WebMethod()]
 
         public System.Data.DataSet getTenRecentImages()
@@ -50,9 +52,14 @@ namespace WebRole1
             myConn.Open();
 
             //select latest 10 image here
-            da = new SqlDataAdapter("select * from Image order by ID desc limit 10", myConn);
+           // da = new SqlDataAdapter("select * from Image order by ID desc limit 10", myConn);
 
+            string sqlText = "select * from Image where ID=@inID";
+            cmd.CommandText = sqlText;
+
+            myConn.Open();
             da.Fill(workDS, "IMGTable");
+            myConn.Open();
 
             return workDS;
 
@@ -67,12 +74,20 @@ namespace WebRole1
 
             System.Data.DataSet workDS = new System.Data.DataSet();
 
-            myConn.Open();
+            string sqlText = "select * from Image where ID=@inID";
+            cmd.CommandText = sqlText;
+
+
 
             //select latest 10 image here
-            da = new SqlDataAdapter("select * from Image where ID=userid", myConn);
-
+            //da = new SqlDataAdapter("select * from Image where ID=@inID", myConn);
+            
+            cmd.Parameters.Add("@inID", SqlDbType.Int, 100);
+            cmd.Parameters["@inID"].Value = userid;
+            myConn.Open();
             da.Fill(workDS, "IMGTable");
+            myConn.Open();
+            
 
             return workDS;
 

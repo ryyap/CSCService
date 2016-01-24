@@ -23,7 +23,7 @@ namespace WebRole1
 
         protected SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True");
 
-        protected SqlDataAdapter da;
+        protected SqlDataAdapter da = new SqlDataAdapter();
 
         protected SqlCommandBuilder cb;
 
@@ -40,86 +40,50 @@ namespace WebRole1
         }
 
         [WebMethod()]
-
-        public DataSet getTenRecentImages()
+        public int deleteOneImageRecord(int userid)
         {
+            int numOfRecordsAffected = 0;
 
-            DataSet workDS = new DataSet();
-
+            string sqlText = "DELETE Image ";
+            sqlText += " WHERE ID=@inID";
+            //Prepare a valid DELETE SQL statement
+            cmd.CommandText = sqlText;//setup the SQL in the cmd object
+            cmd.Parameters.Add("@inID", SqlDbType.Int);
+            cmd.Parameters["@inID"].Value = userid;
+            cmd.Connection = myConn;
             myConn.Open();
-
-            //select latest 10 image here
-            da = new SqlDataAdapter("select * from Image ", myConn);
-
-            da.Fill(workDS, "IMGTable");
-
-            return workDS;
-
+            numOfRecordsAffected = cmd.ExecuteNonQuery();
+            myConn.Close();
+            return numOfRecordsAffected;
         }
-
-          [WebMethod()]
-        public DataSet getUser()
-        {
-
-            DataSet workDS = new DataSet();
-
-            myConn.Open();
-
-            //select latest 10 image here
-            da = new SqlDataAdapter("select Username from User", myConn);
-
-            da.Fill(workDS, "IMGTable");
-
-            return workDS;
-
-        }
-
 
 
         [WebMethod()]
-          public DataSet getImagesByUserID(int userid)
-        {
-            System.Data.DataSet workDS = new System.Data.DataSet();
 
-            myConn.Open();
-
-            //select latest 10 image here
-            da = new SqlDataAdapter("select * from Image where ID="+userid, myConn);
-
-            da.Fill(workDS, "IMGTable");
-
-
-            return workDS;
-
-        }
-
-        [WebMethod()]
-        public byte[] getImagesByImageID(int imgid)
+        public byte[] getImagesByID(int userid)
         {
             byte[] btImage = null;
             System.Data.DataSet workDS = new System.Data.DataSet();
-
-            myConn.Open();
-
+            string sqlText = "Select * from Image where ID=@inID";
+            cmd.Connection = myConn;
+            da.SelectCommand = cmd;
+            cmd.CommandText = sqlText;
             //select latest 10 image here
-            da = new SqlDataAdapter("select * from Image where ID="+imgid, myConn);
-
+            //da = new SqlDataAdapter("select * from Image where ID=@inID", myConn);
+            cmd.Parameters.Add("@inID", SqlDbType.Int, 100);
+            cmd.Parameters["@inID"].Value = userid;
+            myConn.Open();
             da.Fill(workDS, "IMGTable");
-
-
+            myConn.Close();
             btImage = (byte[])workDS.Tables[0].Rows[0][2];
             return btImage;
-
         }
+
 
         [WebMethod()]
         public int addImage(int inUploadedBy, byte[] inImageData)
         {
-
             int numOfRecordsAffected = 0;
-
-
-
             //Prepare a INSERT SQL template
             string sqlText = "INSERT INTO Image(UploadedBy,ImageData)";
             sqlText += " VALUES (@inUploadedBy,@inImageData);";
@@ -138,9 +102,22 @@ namespace WebRole1
         }//addImage() method
 
 
-       
+        [WebMethod()]
 
+        public System.Data.DataSet getTenRecentImages()
+        {
 
+            DataSet workDS = new DataSet();
+            string sqlText = "select * from Image";
+            cmd.Connection = myConn;
+            da.SelectCommand = cmd;
+            cmd.CommandText = sqlText;
+            myConn.Open();
+            da.Fill(workDS, "IMGTable");
+            myConn.Close();
+            return workDS;
+
+        }
 
         [WebMethod]
         public string HelloWorld()
