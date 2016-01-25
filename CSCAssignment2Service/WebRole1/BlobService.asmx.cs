@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 
+using Microsoft.WindowsAzure.ServiceRuntime;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+
 
 
 namespace WebRole1

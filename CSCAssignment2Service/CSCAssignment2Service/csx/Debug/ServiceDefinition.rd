@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CSCAssignment2Service" generation="1" functional="0" release="0" Id="1b5936af-8897-47a8-80f0-a7fa10efa79b" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CSCAssignment2Service" generation="1" functional="0" release="0" Id="d1c0f6e1-093f-4338-9413-d715946fded7" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="CSCAssignment2ServiceGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -81,9 +81,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="326211e8-e5d6-4c1b-8bb5-c578bb63c1cf" ref="Microsoft.RedDog.Contract\ServiceContract\CSCAssignment2ServiceContract@ServiceDefinition">
+    <implementation Id="7c4b5025-a14c-4f24-b3c5-738c23bab9c4" ref="Microsoft.RedDog.Contract\ServiceContract\CSCAssignment2ServiceContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="043b36cb-32d2-4802-9e30-e1920a4bbd61" ref="Microsoft.RedDog.Contract\Interface\WebRole1:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="10339226-9609-444b-9c2e-30fc84ec1e81" ref="Microsoft.RedDog.Contract\Interface\WebRole1:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/CSCAssignment2Service/CSCAssignment2ServiceGroup/WebRole1:Endpoint1" />
           </inPort>

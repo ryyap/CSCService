@@ -211,6 +211,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="EmailWebService.asmx" />
+    <Content Include="BlobManager.asmx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -228,6 +229,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="GetBlobs.ashx" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="ImgWebService.asmx" />
     <Content Include="RegisterWebService.asmx" />
@@ -322,6 +324,13 @@
     </Compile>
     <Compile Include="EmailWebService.asmx.cs">
       <DependentUpon>EmailWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GetBlobs.ashx.cs">
+      <DependentUpon>GetBlobs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BlobManager.asmx.cs">
+      <DependentUpon>BlobManager.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Global.asax.cs">

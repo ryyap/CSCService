@@ -76,7 +76,6 @@ C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\ko\System
 C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\ru\System.Spatial.resources.dll
 C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
 C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.dll
 C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.pdb
 C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\WebRole1.dll.config
@@ -164,3 +163,4 @@ C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRo
 C:\Users\Haris\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
 C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
 C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\bin\MonAgentListener.dll
+C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
