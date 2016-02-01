@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CSCAssignment2Service" generation="1" functional="0" release="0" Id="d1c0f6e1-093f-4338-9413-d715946fded7" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CSCAssignment2Service" generation="1" functional="0" release="0" Id="ee091fdb-f266-4577-907c-110db3ee8425" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="CSCAssignment2ServiceGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -52,7 +52,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="WebRole1" generation="1" functional="0" release="0" software="C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="WebRole1" generation="1" functional="0" release="0" software="C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
@@ -81,9 +81,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="7c4b5025-a14c-4f24-b3c5-738c23bab9c4" ref="Microsoft.RedDog.Contract\ServiceContract\CSCAssignment2ServiceContract@ServiceDefinition">
+    <implementation Id="4dc0b3c7-53d1-415d-a65a-71b7bc13c9e3" ref="Microsoft.RedDog.Contract\ServiceContract\CSCAssignment2ServiceContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="10339226-9609-444b-9c2e-30fc84ec1e81" ref="Microsoft.RedDog.Contract\Interface\WebRole1:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="1267734a-2421-4c6c-b025-af2b4d51f895" ref="Microsoft.RedDog.Contract\Interface\WebRole1:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/CSCAssignment2Service/CSCAssignment2ServiceGroup/WebRole1:Endpoint1" />
           </inPort>

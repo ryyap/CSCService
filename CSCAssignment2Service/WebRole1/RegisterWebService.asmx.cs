@@ -22,12 +22,12 @@ namespace WebRole1
       SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;");
          SqlDataAdapter userDA;
          SqlCommandBuilder userCB;
-
+         SqlDataReader userDR;
          SqlCommand cmd = new SqlCommand();
         [WebMethod]
         public bool RegisterUser(string username,string password,string dateofbirth,string email)
         {
-            string sqlText = " INSERT INTO [CSC_Assignment].[dbo].[User] (Username,Password,DateOfBirth,Email) VALUES (@UserName,@Password,@DateOfBirth,@Email);";
+            string sqlText = " IF NOT EXISTS (SELECT UserName,Email FROM [CSC_Assignment].[dbo].[User] WHERE UserName = @UserName OR Email=@Email) BEGIN INSERT INTO [CSC_Assignment].[dbo].[User] (Username,Password,DateOfBirth,Email) VALUES (@UserName,@Password,@DateOfBirth,@Email)  END;";
       cmd.CommandText = sqlText;
       cmd.Connection = myConn;
             cmd.Parameters.Add("@UserName", SqlDbType.VarChar, 10);
@@ -39,18 +39,24 @@ namespace WebRole1
             cmd.Parameters.Add("@Email", SqlDbType.VarChar, 30);
             cmd.Parameters["@Email"].Value = email;
             myConn.Open();
-            cmd.ExecuteNonQuery();
-            myConn.Close();
-            return true;
+           int x= cmd.ExecuteNonQuery();
+           if (x > 0)
+           {
+               myConn.Close();
+               return true;
+           }
+           else
+           {
+               myConn.Close();
+               return false;
+           }
+           
+    
           
         }
         [WebMethod()]
         public bool UserLogin(string email, string password)
         {
-            //simulating network delay
-            Thread.Sleep(2000);
-            
- 
             try
             {
               
@@ -75,8 +81,19 @@ namespace WebRole1
  
                 myConn.Open();
                 cmd.Connection = myConn;
-              cmd.ExecuteScalar();
-       
+             userDR= cmd.ExecuteReader();
+             if (userDR.HasRows)
+             {
+                 while (userDR.Read())
+                 {
+                     return true;
+                 }
+             }
+             else
+             {
+                 return false;
+             }
+             userDR.Close();
             }
             catch (Exception ex)
             {
