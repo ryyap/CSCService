@@ -89,7 +89,7 @@ return numOfRecordsAffected;
             da.SelectCommand = cmd;
             cmd.CommandText = sqlText;
             cmd.Parameters.Add("@inNewPassword", SqlDbType.VarChar, 100);
-            cmd.Parameters["@inNewPassword"].Value = password;
+            cmd.Parameters["@inNewPassword"].Value = newpass;
             cmd.Parameters.Add("@inID", SqlDbType.Int);
             cmd.Parameters["@inID"].Value = userid;
             cmd.Parameters.Add("@inPassword", SqlDbType.VarChar, 100);
