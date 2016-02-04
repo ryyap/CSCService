@@ -18,8 +18,11 @@ namespace WebRole1
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     // [System.Web.Script.Services.ScriptService]
     public class RegisterWebService : System.Web.Services.WebService
+
+        //"Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True"
+    //Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;
     {
-      SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;");
+        SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;");
          SqlDataAdapter userDA;
          SqlCommandBuilder userCB;
          SqlDataReader userDR;
