@@ -22,9 +22,9 @@ namespace WebRole1
     public class EmailWebService : System.Web.Services.WebService
     {
         //SqlCommand custCMD = new SqlCommand();
-        SqlCommand cmd;
+        SqlCommand cmd = new SqlCommand();
 
-        protected SqlConnection myConn = new SqlConnection("Data Source=\\DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True");
+        protected SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True");
 
         protected SqlDataAdapter da;
 
@@ -118,42 +118,66 @@ namespace WebRole1
         }//addImage() method
 
 
-        [WebMethod]
+        [WebMethod()]
         public void SendActivationEmail(int userID,string txtEmail,string txtUsername)
         {
             
             string activationCode = Guid.NewGuid().ToString();
-          
-                cmd.CommandText = "INSERT INTO UserActivation VALUES(@UserId, @ActivationCode)";
-                cmd.Parameters.AddWithValue("@UserId", userID);
-                cmd.Parameters.AddWithValue("@ActivationCode", activationCode);
+
+           
+            string sqlText = "INSERT INTO UserActivation(UserId,ActivationCode)";
+            sqlText += " VALUES(@UserId, @ActivationCode);";
+            //setup the SQL in the cmd object
+            cmd.CommandText = sqlText;
+            cmd.Parameters.Add("@UserId", SqlDbType.VarChar, 10);
+            cmd.Parameters["@UserId"].Value = userID;
+            cmd.Parameters.Add("@ActivationCode",SqlDbType.VarChar, 1000);
+            cmd.Parameters["@ActivationCode"].Value = activationCode;
                 cmd.Connection = myConn;
                 myConn.Open();
                 cmd.ExecuteNonQuery();
-                myConn.Close();
+             
 
                 using (MailMessage mm = new MailMessage("sender@gmail.com", txtEmail))
                 {
                     mm.Subject = "Account Activation";
                     string body = "Hello " + txtUsername.Trim() + ",";
                     body += "<br /><br />Please click the following link to activate your account";
-                    body += "<br /><a href = '" + activationCode + "'>Click here to activate your account.</a>";
+                    body += "<br /><a href = "+"http://localhost:29732/Activation.aspx?ActivationCode=" + activationCode + ">Click here to activate your account.</a>";
                     body += "<br /><br />Thanks";
                     mm.Body = body;
                     mm.IsBodyHtml = true;
                     SmtpClient smtp = new SmtpClient();
                     smtp.Host = "smtp.gmail.com";
                     smtp.EnableSsl = true;
-                    NetworkCredential NetworkCred = new NetworkCredential("sender@gmail.com", "<password>");
+                    NetworkCredential NetworkCred = new NetworkCredential("hariscsctest@gmail.com", "135790KLMN");
                     smtp.UseDefaultCredentials = true;
                     smtp.Credentials = NetworkCred;
                     smtp.Port = 587;
                     smtp.Send(mm);
                 }
+                myConn.Close();
             }
         
          
-        
+        [WebMethod()]
+        public bool ValidateActivation(string validationCode)
+        {
+            cmd.CommandText = "DELETE FROM UserActivation WHERE ActivationCode = @ActivationCode";
+            cmd.Parameters.AddWithValue("@ActivationCode", validationCode);
+            cmd.Connection = myConn;
+            myConn.Open();
+            int rowsAffected = cmd.ExecuteNonQuery();
+            myConn.Close();
+            if (rowsAffected == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
 

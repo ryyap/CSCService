@@ -22,7 +22,7 @@ namespace WebRole1
         //"Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True"
     //Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;
     {
-        SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True;");
+        SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True");
          SqlDataAdapter userDA;
          SqlCommandBuilder userCB;
          SqlDataReader userDR;
@@ -39,7 +39,7 @@ namespace WebRole1
             cmd.Parameters["@Password"].Value = password;
             cmd.Parameters.Add("@DateOfBirth", SqlDbType.VarChar, 10);
             cmd.Parameters["@DateOfBirth"].Value = dateofbirth;
-            cmd.Parameters.Add("@Email", SqlDbType.VarChar, 30);
+            cmd.Parameters.Add("@Email", SqlDbType.VarChar, 100);
             cmd.Parameters["@Email"].Value = email;
             myConn.Open();
            int x= cmd.ExecuteNonQuery();
