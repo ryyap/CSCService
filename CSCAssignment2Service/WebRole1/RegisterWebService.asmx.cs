@@ -22,7 +22,7 @@ namespace WebRole1
         //"Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True"
     //Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;
     {
-        SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;");
+        SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True;");
          SqlDataAdapter userDA;
          SqlCommandBuilder userCB;
          SqlDataReader userDR;
@@ -62,6 +62,7 @@ namespace WebRole1
         {
             try
             {
+                DataSet workDS = new DataSet();
               
                 cmd = new SqlCommand(
                     "SELECT * from [CSC_Assignment].[dbo].[User] where email=@email " + "and password= @password");
@@ -107,6 +108,47 @@ namespace WebRole1
  
             myConn.Close();
             return true;
+        }
+
+        [WebMethod()]
+        public string getUserID(string email, string password)
+        {
+            string id = "";
+
+            DataSet workDS = new DataSet();
+                cmd = new SqlCommand(
+                    "SELECT ID from [CSC_Assignment].[dbo].[User] where email=@email " + "and password= @password");
+
+
+                SqlParameter param1 = new SqlParameter();
+                param1.SqlDbType = SqlDbType.NVarChar;
+                param1.ParameterName = "@email";
+                param1.Value = email;
+
+                SqlParameter param2 = new SqlParameter();
+                param2.SqlDbType = SqlDbType.NVarChar;
+                param2.ParameterName = "@password";
+                param2.Value = password;
+
+
+                cmd.Parameters.Add(param1);
+                cmd.Parameters.Add(param2);
+
+
+                cmd.Connection = myConn;
+
+                //userDR = cmd.ExecuteReader();
+
+
+                myConn.Open();
+                userDA = new SqlDataAdapter();
+                userDA.SelectCommand = cmd;
+                userDA.Fill(workDS,"table");
+
+              
+            myConn.Close();
+            return id = workDS.Tables[0].Rows[0]["ID"].ToString();
+           
         }
 
     }

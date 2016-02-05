@@ -18,10 +18,13 @@ namespace WebRole1
     // [System.Web.Script.Services.ScriptService]
     public class UserProfileWebService : System.Web.Services.WebService
     {
+
+        //"Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True"
+        //Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True;
         SqlCommand custCMD = new SqlCommand();
         SqlCommand cmd = new SqlCommand();
 
-        protected SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1333932;Initial Catalog=CSC_Assignment;Integrated Security=True");
+        protected SqlConnection myConn = new SqlConnection("Data Source=DIT-NB1334607\\SQLEXPRESS;Initial Catalog=CSC_Assignment;Integrated Security=True");
 
         protected SqlDataAdapter da = new SqlDataAdapter();
 
