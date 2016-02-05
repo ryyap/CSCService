@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Services;
 
@@ -116,7 +117,47 @@ namespace WebRole1
         }//addImage() method
 
 
-       
+        [WebMethod]
+        public string SendEmail(string msgFrom, string pass, string msgTo, string msgSubject, string msgBody)
+        {
+            string functionReturnValue = "";
+
+             try
+            {
+
+                SmtpClient SendMailClient = new SmtpClient("smtp.gmail.com");
+
+                MailAddress fromAddress = new MailAddress(msgFrom);
+                MailAddress toAddress = new MailAddress(msgTo);
+                MailMessage msg = new MailMessage(fromAddress, toAddress);
+
+                //Port number
+                SendMailClient.Port = 587;
+                //ssl required
+                SendMailClient.EnableSsl = true;
+
+                //authentication required
+                SendMailClient.UseDefaultCredentials = false;
+                SendMailClient.Credentials = new System.Net.NetworkCredential(msgFrom, pass);
+
+
+
+                msg.Subject = msgSubject;
+                msg.Body = msgBody;
+
+                SendMailClient.Send(msg);
+                functionReturnValue = "OK";
+            }
+             catch (Exception ex)
+             {
+                 functionReturnValue = "ERROR ";
+
+             }
+                return functionReturnValue;
+            
+            
+         
+        }
 
 
 
