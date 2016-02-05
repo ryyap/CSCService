@@ -244,6 +244,6 @@ C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\We
 C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\WebRole1\bin\ru\System.Spatial.resources.dll
 C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\WebRole1\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\WebRole1\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
 C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.dll
 C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.pdb
+C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache

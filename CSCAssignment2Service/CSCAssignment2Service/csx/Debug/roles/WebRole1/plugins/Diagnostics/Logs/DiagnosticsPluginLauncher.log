@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 Thursday 2:22:49 PM] Emulator config file set to C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
 DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 Thursday 2:22:50 PM] DiagnosticsStoreRootPath set to: C:\Users\R Y Yap\AppData\Local\dftmp\Resources\653d447b-1ac5-44b3-8d69-026ecdba8c54
 DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 Thursday 2:22:50 PM] Loading config file: C:\Users\R Y Yap\Desktop\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
@@ -15,3 +16,22 @@ DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 Thursday 2:22:51 PM] Di
 DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 Thursday 2:22:51 PM] Resetting DiagnosticPlugin
 DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 Thursday 2:24:01 PM] DiagnosticsPlugin launched successfully with new configuration
 DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 Thursday 2:24:01 PM] DiagnosticPlugin exited with code 0
+=======
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Emulator config file set to C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] DiagnosticsStoreRootPath set to: C:\Users\Haris\AppData\Local\dftmp\Resources\0ee6f2a6-3a37-4ee5-9b71-41f8c985f5f3
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Loading config file: C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Config file to read: C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Emulator config file set to C:\Users\Haris\Desktop\The actual cscservice\CSCService\CSCAssignment2Service\CSCAssignment2Service\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 8:59:00 AM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 9:00:11 AM] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [4/2/2016 9:00:11 AM] DiagnosticPlugin exited with code 0
+>>>>>>> origin/master
